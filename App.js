@@ -1,13 +1,12 @@
 import { StyleSheet, Text, View } from "react-native";
 import { Provider } from "react-redux";
 import { store } from "./store";
+import HomeScreen from "./screens/HomeScreen";
 
 export default function App() {
   return (
     <Provider store={store}>
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-      </View>
+      <HomeScreen />
     </Provider>
   );
 }
